@@ -31,10 +31,10 @@
 >
 	{#each programs as program}
 		<SwiperSlide>
-			<div class="card who bg-cover bg-no-repeat h-72 bg-center" style="background-image: url('/sdg_summit_test/img/{program.image}');">
+			<div class="card who bg-cover bg-no-repeat h-72 bg-center" style="background-image: url('/img/{program.image}');">
 			<!-- <div class="content" >{program.title}</div> -->
 			 
-			<div class="content text-white">
+			<div class="content text-white w-full p-0">
 				<h3 class=" text-lg">{program.title}</h3>
 				<p class="justify-center">
 					{program.content}
@@ -101,6 +101,8 @@
       right: 0;
       bottom: 0;
       border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       background: rgba(0, 0, 0, 0.8);
       z-index: 1;
       transition: all 500ms ease

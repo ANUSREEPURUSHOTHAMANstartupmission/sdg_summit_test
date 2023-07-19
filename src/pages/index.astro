@@ -5,6 +5,7 @@ import Speakers from '../components/Speakers.svelte';
 import Bg from '../components/Bg.astro';
 import Schedule from '../components/Schedule.svelte';
 import Countdown from '../components/Countdown.svelte';
+import Faq from '../components/Faqdata.astro';
 
 import Goals from '../components/Goals.astro';
 
@@ -13,9 +14,8 @@ import Goals from '../components/Goals.astro';
 
 <Layout  title="Sustainability Summit" class=" relative">
 <Bg></Bg>
-<main class=" relative py-24 min-h-screen flex flex-col items-center justify-center overflow-hidden" id="home" >
-	<div class=" absolute md:w-[70vh] md:h-[70vh] w-44 h-44 md:-right-24 animate-spin-slow md:-bottom-40 z-30 -right-20 -bottom-20"> <img src="/sdg_summit_test/img/Asset 1.svg" alt=""></div>
-	<Countdown date="2023-10-07T09:00" client:load></Countdown>
+<main class=" relative py-24 min-h-screen flex flex-col items-center justify-center overflow-x-clip" id="home" >
+	<div class=" absolute md:w-[120vh] md:h-[120vh] w-44 h-44 md:-right-[45vh] animate-spin-slow md:-bottom-[75vh] z-30 -right-24 -bottom-20"> <img src="sdg_summit_test/img/Asset 1.svg" alt=""></div>
 	<div id="default-carousel" class="absolute  bg-cover bg-center  bg-no-repeat w-full h-full top-0 left-0 " data-carousel="slide">
 		<div class=" min-h-screen overflow-hidden relative ">
 			<div class="hidden duration-700  transition-none my-auto" data-carousel-item>
@@ -52,8 +52,10 @@ import Goals from '../components/Goals.astro';
 							</svg>
 							
 						</div>
-						
+						<Countdown date="2023-10-07T09:00" client:load></Countdown>
 					</div>
+					
+
 				</div>
 			</div>
 			<div class="hidden duration-700  transition-none my-auto" data-carousel-item>
@@ -87,6 +89,7 @@ import Goals from '../components/Goals.astro';
 							</svg>
 							
 						</div>
+						<Countdown date="2023-10-07T09:00" client:load></Countdown>
 						
 					</div>
 				</div>
@@ -123,7 +126,7 @@ import Goals from '../components/Goals.astro';
 							</svg>
 							
 						</div>
-						
+						<Countdown date="2023-10-07T09:00" client:load></Countdown>
 					</div>
 				</div>
 			</div>
@@ -137,17 +140,12 @@ import Goals from '../components/Goals.astro';
 
 <!-- about -->
   
-	<section class="py-24 px-10" id="about">
-		<div class="flex md:flex-row flex-col">
-			<div class="md:w-1/2 w-full flex my-auto">
-				<img src="/sdg_summit_test/img/about1.jpeg" class=" mx-auto my-auto flex">
-			</div>
-			<div class="flex flex-col  mx-auto text-center  md:w-1/2 w-full md:text-xl text-lg my-auto md:pr-10 pr-0">
-				<h1 class=" md:text-5xl text-3xl font-goals text-center pb-10"  data-aos="fade-right" data-aos-duration="3000">WHAT IS SDG IMPACT SUMMIT?</h1>
-				
-				<p class=" leading-8 text-justify font-data transition ease-linear"data-aos="fade-down"
-				data-aos-easing="linear"
-				data-aos-duration="1500"  data-aos="fade-right" data-aos-duration="3000">
+	<section class="py-24" id="about">
+		<div class="flex md:flex-row flex-col px-16">
+			
+			<div class="flex flex-col   md:w-1/2 w-full md:text-xl text-lg my-auto">
+				<h1 class=" md:text-5xl text-3xl font-goals text-center pb-10">WHAT IS SDG IMPACT SUMMIT?</h1>
+				<p class=" leading-8 text-justify font-data transition ease-linear">
 				SDG IMPACT Summit is a premier event and provides a vibrant forum for sustainability enthusiasts, innovators and students to come together and discuss solutions to the urgent global concerns of our day. We hope to encourage partnerships and inspire workable solutions in a number of fields through interesting panel discussions, masterclasses, sustainable fleas, enlightening keynotes and interactive workshops. Join us at the Kerala Startup Mission for this  much-anticipated SDG Impact Summit.
 				</p>
 			</div>
@@ -156,7 +154,7 @@ import Goals from '../components/Goals.astro';
 	
 <!-- statistics -->
 
-<section class=" py-28 px-5 relative" >
+<section class=" py-32 px-5 relative" >
     <div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 left-0 " style="background-image:url('/sdg_summit_test/img/AdobeStock_211733194 1.png')"></div>  
     <div class="absolute -z-10  bg-[#0f1437eb] bg-opacity-100 w-full h-full top-0 left-0"></div>
     <div class="container mx-auto flex">
@@ -166,48 +164,48 @@ import Goals from '../components/Goals.astro';
 						
 			<div class="flex flex-col space-y-3 mx-auto">
 				<div class=" flex mx-auto">
-					<img src="/sdg_summit_test/img/communities-social-networking-icon.svg" class=" w-8 h-8 text-center">
+					<img src="sdg_summit_test/img/communities-social-networking-icon.svg" class=" w-8 h-8 text-center">
 				</div>
 				<div class=" flex mx-auto">
-					<span class="count flex flex-row md:text-4xl text-3xl font-bold" data-start="300" data-end="500"></span><span class=" md:text-3xl text-xl font-bold">+</span>
+					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-goals" data-start="300" data-end="500"></span><span class=" md:text-3xl text-xl font-bold">+</span>
 				</div>
 				<div class=" text-xl text-slate-600">Delegates</div>
 			</div>
 			<div class="flex flex-col space-y-3 mx-auto">
 				<div class=" flex mx-auto">
-					<img src="/sdg_summit_test/img/globe-network-icon.svg" class=" w-8 h-8 text-center">
+					<img src="sdg_summit_test/img/globe-network-icon.svg" class=" w-8 h-8 text-center">
 				</div>
 				<div class=" flex mx-auto">
-					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-data" data-start="0" data-end="30"></span><span class=" md:text-3xl text-xl font-bold">+</span>
+					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-goals" data-start="0" data-end="30"></span><span class=" md:text-3xl text-xl font-bold">+</span>
 				</div>
 				<div class=" text-xl text-slate-600">Exhibitors</div>
 			</div>
 			<div class="flex flex-col space-y-3 mx-auto">
 				<div class=" flex mx-auto">
-					<img src="/sdg_summit_test/img/speak-speech-man-icon.svg" class=" w-8 h-8 text-center">
+					<img src="sdg_summit_test/img/speak-speech-man-icon.svg" class=" w-8 h-8 text-center">
 				</div>
 				<div class=" flex mx-auto">
-					<span class="count flex flex-row md:text-4xl text-3xl font-bold" data-start="0" data-end="20"></span><span class=" md:text-3xl text-xl font-bold">+</span>
+					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-goals" data-start="0" data-end="20"></span><span class=" md:text-3xl text-xl font-bold">+</span>
 				</div>
 				<div class=" text-xl text-slate-600">Speakers</div>
 			</div>
 			
 			<div class="flex flex-col space-y-3 mx-auto">
 				<div class=" flex mx-auto">
-					<img src="/sdg_summit_test/img/business-seminar-icon.svg" class=" w-8 h-8 text-center">
+					<img src="sdg_summit_test/img/business-seminar-icon.svg" class=" w-8 h-8 text-center">
 				</div>
 				<div class=" flex mx-auto">
-					<span class="count flex flex-row md:text-4xl text-3xl font-bold" data-start="0" data-end="15"></span><span class=" md:text-3xl text-xl font-bold">+</span>
+					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-goals" data-start="0" data-end="15"></span><span class=" md:text-3xl text-xl font-bold">+</span>
 				</div>
 				<div class=" text-xl text-slate-600">Programmes</div>
 			</div>
 
 			<div class="flex flex-col space-y-3 mx-auto">
 				<div class=" flex mx-auto">
-					<img src="/sdg_summit_test/img/leadership-icon.svg" class=" w-9 h-9 text-center text-slate-600">
+					<img src="sdg_summit_test/img/leadership-icon.svg" class=" w-9 h-9 text-center text-slate-600">
 				</div>
 				<div class=" flex mx-auto">
-					<span class="count flex flex-row md:text-4xl text-3xl font-bold" data-start="0" data-end="10"></span><span class=" md:text-3xl text-xl font-bold">+</span>
+					<span class="count flex flex-row md:text-4xl text-3xl font-bold font-goals" data-start="0" data-end="10"></span><span class=" md:text-3xl text-xl font-bold">+</span>
 				</div>
 				<div class=" text-xl text-slate-600">Partners</div>
 			</div>
@@ -277,50 +275,53 @@ import Goals from '../components/Goals.astro';
 	<section class=" py-24   font-data  text-white bg-[#4aab3dd9]  relative">
 		
 		<h1 class=" md:text-5xl text-3xl font-goals pb-10 text-center">WHY ATTEND</h1>
-		<div class=" grid lg:grid-cols-2 grid-cols-1 lg:gap-2 gap-6 ">
-			<div class=" grid lg:grid-cols-3 grid-cols-2 gap-7  px-12">
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Global Awareness</h1>
-					<p class="" >Boost understanding worldwide about the importance of meeting the UN's Sustainable Development Goals by 2030.</p>
+		<div class=" flex lg:flex-row flex-cols space-x-5">
+			 <div class=" lg:w-2/3 w-full">
+				<div class=" grid lg:grid-cols-3 grid-cols-2 gap-7  px-12">
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Global Awareness</h1>
+						<p class="" >Boost understanding worldwide about the importance of meeting the UN's Sustainable Development Goals by 2030.</p>
+					</div>
+		
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Fuel Partnerships</h1>
+						<p >
+							Spark conversation and cooperation between global governments, organizations, businesses, and communities for SDG advancement.				</p>
+					</div>
+		
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Spotlight Success Stories</h1>
+						<p >
+							Offer a platform to showcase inspiring stories and effective strategies in SDG implementation.
+						</p>
+					</div>
+		
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Promote Responsible Investments</h1>
+						<p >
+							Encourage discussions around ethical financing and investment to back the SDGs.
+						</p>
+					</div>
+		
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Policy Discussion</h1>
+						<p >
+							Facilitate debates on necessary policy shifts to support the journey towards achieving SDGs.
+						</p>
+					</div>
+		
+					<div class=" space-y-4">
+						<h1 class=" md:text-2xl text-xl text-white  font-bold">Empower the Youth</h1>
+						<p >
+							Ignite passion among young leaders to contribute actively towards achieving the SDGs.
+						</p>
+					</div>
+		
 				</div>
-	
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Fuel Partnerships</h1>
-					<p >
-						Spark conversation and cooperation between global governments, organizations, businesses, and communities for SDG advancement.				</p>
-				</div>
-	
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Spotlight Success Stories</h1>
-					<p >
-						Offer a platform to showcase inspiring stories and effective strategies in SDG implementation.
-					</p>
-				</div>
-	
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Promote Responsible Investments</h1>
-					<p >
-						Encourage discussions around ethical financing and investment to back the SDGs.
-					</p>
-				</div>
-	
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Policy Discussion</h1>
-					<p >
-						Facilitate debates on necessary policy shifts to support the journey towards achieving SDGs.
-					</p>
-				</div>
-	
-				<div class=" space-y-4">
-					<h1 class=" md:text-2xl text-xl text-white  font-bold">Empower the Youth</h1>
-					<p >
-						Ignite passion among young leaders to contribute actively towards achieving the SDGs.
-					</p>
-				</div>
-	
 			</div>
-			<div class=" flex ">
-				<img src="/sdg_summit_test/img/map3.png" class=" flex  ">
+			
+			<div class=" flex md:w-1/3 w-full">
+				<img src="sdg_summit_test/img/map3.png" class=" flex  ">
 			</div>
 			
 		</div>
@@ -335,7 +336,7 @@ import Goals from '../components/Goals.astro';
 	
 <!-- programs -->
 
-	<section id="programs" class="py-32 px-5 overflow-x-hidden  mb-24 bg-bottom bg-cover" style="background-image:url('/sdg_summit_test/img/5.jpg')">
+	<section id="programs" class="py-32 px-5 overflow-x-hidden bg-bottom bg-cover" style="background-image:url('/sdg_summit_test/img/5.jpg')">
 		<div class="container mx-auto ">
 		  <div class="font-other font-bold text-4xl text-center mb-10 text-white">		
 			<h1 class=" md:text-5xl text-3xl font-goals pb-10 text-center">Programmes</h1>
@@ -357,36 +358,36 @@ import Goals from '../components/Goals.astro';
 
 <!-- target -->
 	  
-	  <section class=" bg-[#007aff] mb-24 pt-24 pb-10">
+	  <section class=" bg-[#007aff] mb-24 pt-10 pb-10">
 		<div class=" mx-auto flex flex-col p-8">
 			<h1 class=" md:text-5xl text-3xl font-goals pb-20 text-center text-white">Target Audience</h1>
 			
 			<div class="px-4 grid grid-cols-2 gap-2 md:grid-cols-6 text-center text-white font-data md:text-lg text-base">
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/mentor.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto pb-2">
+					<img src="sdg_summit_test/img/mentor.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto pb-2">
 					SDG Enthusiasts
 				</div>
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/students.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto pb-2">
+					<img src="sdg_summit_test/img/students.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto pb-2">
 					Students
 				</div>
 				
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/startups.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto pb-2">
+					<img src="sdg_summit_test/img/startups.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto pb-2">
 					Startups
 				</div>
 
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/Entrepreneur.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto pb-2">
+					<img src="sdg_summit_test/img/Entrepreneur.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto pb-2">
 					Aspiring Entrepreneurs
 				</div>
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/professional.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto pb-2">
+					<img src="sdg_summit_test/img/professional.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto pb-2">
 					Professionals
 				</div>
 				
 				<div class=" flex flex-col text-center">
-					<img src="/sdg_summit_test/img/investor2.png" class="md:w-12 md:h-12  flex  h-10 w-10 text-center mx-auto  pb-2">
+					<img src="sdg_summit_test/img/investor2.png" class="md:w-14 md:h-14  flex  h-10 w-10 text-center mx-auto  pb-2">
 					Non-profits
 				</div>
 			  </div>
@@ -424,217 +425,8 @@ import Goals from '../components/Goals.astro';
 
 <!-- faq -->
 
-<section class=" px-10 pb-24 pt-10" id="faq">
-	<div class=" flex md:flex-row flex-col md:space-x-5 space-x-0 font-data">
-		<div class="md:w-1/2 w-full my-auto space-y-4">
 
-			<div class=" main_div border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb]  rounded-xl" onclick="faq1(this.id,'a1','b1','t1')" id="q1" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">What is the SDG Impact Summit 2023?</h1>
-				<svg id="b1"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t1" style="display: none;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls p-5" id="a1" style="display: none;">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						SDG Impact Summit 2023 is a global gathering of thought leaders, innovators, and pioneers who are driving change to address the Sustainable Development Goals (SDGs) established by the United Nations. This Summit is organized by the Kerala Startup Mission and will take place at the Digital Hub in Kochi, India on October 28, 2023.
-					</p>
-				</div>
-			</div>
-			
-			<div class=" main_div border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq1(this.id,'a2','b2','t2')" id="q2" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">What is the focus of this year's summit?</h1>
-				<svg id="b2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t2"  style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls p-5" id="a2" style=" display:none">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						While the exact focus can vary each year, the overall theme typically revolves around the UN's 17 Sustainable Development Goals. These range from ending poverty and hunger to improving education and ensuring environmental sustainability. The 2023 edition may have a specific focus or be broad-based covering multiple SDGs.
-					</p>
-				</div>
-			</div>
-
-
-			<div class=" main_div border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq1(this.id,'a3','b3','t3')" id="q3" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">Where is the SDG Impact Summit 2023 taking place?</h1>
-				<svg id="b3"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t3" style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls p-5" id="a3" style="display: none;">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						The Summit is taking place at the Digital Hub in Kochi, Kerala, India.
-					</p>
-				</div>
-			</div>
-			
-
-			<div class=" main_div border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq1(this.id,'a4','b4','t4')" id="q4" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">Who is organizing the SDG Impact Summit?</h1>
-				<svg id="b4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t4" style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls p-5" id="a4" style=" display:none">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						The SDG Impact Summit is being organized by the Kerala Startup Mission, a flagship initiative of the Government of Kerala, India, that aims to foster a vibrant startup ecosystem in the region.
-					</p>
-				</div>
-			</div>
-
-
-			<div class=" main_div border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq1(this.id,'a5','b5','t5')" id="q5" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">How can I attend the SDG Impact Summit 2023?</h1>
-				<svg id="b5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t5"  style="display: none;"     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls p-5" id="a5"  style="display: none;" >
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						Details about attending the summit, including registration links and ticket prices, will typically be available on the event website. In light of the ongoing global health crisis, there may be both in-person and virtual attendance options.
-					</p>
-				</div>
-			</div>
-			
-		</div>
-
-
-
-		<div class="md:w-1/2 w-full my-auto space-y-4">
-
-			<div class=" main_div1 border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb]  rounded-xl" onclick="faq2(this.id,'a6','b6','t6')" id="q6" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">Are there opportunities for startups to pitch or showcase their solutions at the event?</h1>
-				<svg id="b6"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t6"  style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls1 p-5" id="a6"  style="display: none;"   >
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						Many such events offer opportunities for startups to pitch their ideas or showcase their innovative solutions, especially those aligned with the SDGs. You should check the official event website or contact the organizers for specific details about this year's summit.
-					</p>
-				</div>
-			</div>
-			
-			<div class=" main_div1 border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq2(this.id,'a7','b7','t7')" id="q7" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">Who are the speakers at the event?</h1>
-				<svg id="b7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t7"  style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls1 p-5" id="a7" style=" display:none">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						The list of speakers typically includes a diverse array of thought leaders, innovators, entrepreneurs, and policy-makers from around the globe. The specific lineup for the SDG Impact Summit 2023 should be available on the official event website closer to the date.
-					</p>
-				</div>
-			</div>
-
-
-			<div class=" main_div1 border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq2(this.id,'a8','b8','t8')" id="q8" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data"> Can I volunteer at the event?</h1>
-				<svg id="b8"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t8" style="display: none;"    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls1 p-5" id="a8" style="display: none;" >
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						Many such events welcome volunteers. Interested individuals should check the event website or contact the event organizers for information about volunteering opportunities.
-					</p>
-				</div>
-			</div>
-			
-
-			<div class=" main_div1 border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb] rounded-xl" onclick="faq2(this.id,'a9','b9','t9')" id="q9" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">Is the event accessible to individuals with disabilities?</h1>
-				<svg id="b9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t9" style="display: none;"   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls1 p-5" id="a9" style=" display:none">
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						Organizers typically strive to make such events inclusive and accessible. Specific details about accessibility at the Digital Hub venue should be available on the event website or by contacting the event organizers.
-					</p>
-				</div>
-			</div>
-
-
-			<div class=" main_div1 border p-2 cursor-pointer justify-between flex flex-col border-[#e5e7eb]  rounded-xl" onclick="faq2(this.id,'a10','b10','t10')" id="q10" >
-				<div class="flex justify-between">
-					<h1 class="flex font-semibold text-sm text-teal-700 font-data">How can I sponsor/partner the event?</h1>
-				<svg id="b10"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-				  </svg>
-
-				  <svg id="t10" style="display: none;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 btnt1">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-				  </svg>
-				</div>
-
-				  <div class=" divcls1 p-5" id="a10" style="display: none;" >
-					<p class=" text-justify p-2 text-gray-500 text-base">
-						Sponsorship details, including levels of sponsorship and associated benefits, are generally available on the event website or by contacting the event organizers.
-					</p>
-				</div>
-			</div>
-			
-		</div>
-		
-	</div>
-</section>
-    
+<Faq></Faq>
 <!-- footer -->
 
 <section class="pt-16 bg-[#003845] relative " id="contact">
@@ -675,7 +467,7 @@ import Goals from '../components/Goals.astro';
 		</div>
 		<div class="flex flex-col mx-auto text-center items-center justify-center">
 			<div class=" lg:w-1/2 flex flex-col  ">
-				<img src="/sdg_summit_test/img/SDG Summit Logo-White1.svg" class=" lg:w-2/4 w-1/2  text-center mx-auto ">
+				<img src="sdg_summit_test/img/SDG Summit Logo-White1.svg" class=" lg:w-2/4 w-1/2  text-center mx-auto ">
 				<p class="  text-white  leading-6 text-sm mx-auto lg:w-full w-1/2  text-center font-data">Digital Hub<br> Kerala Technology Innovation Zone (KTIZ), Kinfra Hi-Tech Park, Kalamassery, Kochi, Kerala, India</p>
 			</div>
 			<div>
@@ -723,14 +515,19 @@ import Goals from '../components/Goals.astro';
 		
 	</div>
 	
-
+	<div class=" text-end justify-end flex items-end p-10 pt-0 pb-16">
+		<a href="/"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-white animate-bounce">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+		  </svg></a>
+	</div>
+	
+	
 	<div class=" text-center mx-auto text-xs text-white inset-x-0 bottom-4 absolute pb-1 font-data">All right reserved © 2023 | <a href="https://startupmission.kerala.gov.in/" target="_blank">Kerala Startup Mission</a></div>
 </section>
 	 
 
 
-
-
+  
 
 <div class=" fixed inset-x-0 bottom-0 w-screen">
 	<img src="sdg_summit_test/img/SDG Colors-Resized.svg" alt=""> 
@@ -806,7 +603,7 @@ import Goals from '../components/Goals.astro';
 }
 
 .animate-spin-slow {
-  animation: spin-slow 30s linear infinite;
+  animation: spin-slow 70s linear infinite;
 }
 </style>
 
