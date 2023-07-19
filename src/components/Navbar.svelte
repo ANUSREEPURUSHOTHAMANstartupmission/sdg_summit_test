@@ -4,7 +4,7 @@
 
   let y = 0;
 
-  $: scrolled = y > 200;
+  $: scrolled = y > 100;
 
   function findPos(obj) {
     var curtop = 0;
@@ -36,20 +36,19 @@
 
 <svelte:window bind:scrollY={y}/>
 
-<div id="navbar" class=" space-x-4 md:space-x-0 min-h-fit w-full sm:min-h-0  left-0 top-0 
+<div id="navbar" class=" space-x-4 md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0 top-0 
     flex sm:items-center
      ease-in-out transition-all transform duration-300
-     fixed z-40 
+     fixed z-50 
      {scrolled?'bg-[#003845]':'bg-transparent'} {scrolled?'py-3':'pt-5'}
     ">
   
-    <div class="w-full container mx-auto  flex justify-between md:px-14 px-14">
-      <div class=" md:px-2 m-0 font-medium w-fit p-0 rounded-md flex items-center justify-center">
-      
-        <img src="/img/SDG Summit Logo-White1.svg" alt="logo" class="{scrolled?'sm:h-12':'md:h-20'}">
+    <div class="w-full container mx-auto  flex justify-between px-4">
+      <div class=" md:px-2 m-0 font-medium w-fit p-0 rounded-md flex items-center justify-center ">
+        <img src="/img/SDG Summit Logo-White1.svg" alt="logo" class="{scrolled?'h-12':'h-20'}">
       </div>
 
-      <main class=" flex  items-start space-x-2 md:top-0 md:pt-0 pt-2">
+      <main class=" flex  items-start space-x-2 md:top-0 md:pt-0 pt-2 px-16">
         <div class="flex ">    
           <a href="" class=" bg-white md:p-3 p-1 md:text-base text-xs  text-[#003845] ml-auto flex uppercase">Register</a>
 
@@ -81,7 +80,7 @@
 <div id="navbar" class=" min-h-screen   h-20 p-8 sm:py-3 bg-[#003845]  left-0 top-0 
     flex items-center
      ease-in-out transition-all transform duration-300
-    -translate-x-full  fixed z-40 
+    -translate-x-full  fixed z-50 
      {menu_open?'translate-x-0':''}
     ">
   
@@ -105,11 +104,11 @@
       <nav>
         <ul class=" md:text-sm gap-2 font-data">
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="/" class="md:text-white text-white font-bold hover:text-black uppercase">Home</a>
           </li>
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="#about" class="md:text-white text-white font-bold hover:text-black uppercase">About</a>
           </li>
 
@@ -118,25 +117,26 @@
             <a href="#schedule" class="md:text-white text-white font-bold hover:text-black uppercase">Schedule</a>
           </li> -->
           
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="/" class="md:text-white text-white font-bold hover:text-black uppercase">Register</a>
           </li>
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
-            <a href="/" class="md:text-white text-white font-bold hover:text-black uppercase">Faq</a>
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+            <a href="#faq" class="md:text-white text-white font-bold hover:text-black uppercase">Faq</a>
           </li>
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="/" class="md:text-white text-white font-bold hover:text-black uppercase">Tickets</a>
           </li>
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="/" class="md:text-white text-white font-bold hover:text-black uppercase">EXHIBIT</a>
           </li>
 
-          <li class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
+          <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100">
             <a href="#contact" class="md:text-white text-white font-bold hover:text-black uppercase">Contact</a>
           </li>
+
         </ul>
       </nav>
     </div>
