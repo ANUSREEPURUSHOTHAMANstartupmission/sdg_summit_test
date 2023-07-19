@@ -35,7 +35,7 @@
 			<!-- <div class="content" >{program.title}</div> -->
 			 
 			<div class="content text-white">
-				<h3>{program.title}</h3>
+				<h3 class=" text-lg">{program.title}</h3>
 				<p class="justify-center">
 					{program.content}
 				</p>
@@ -76,7 +76,7 @@
       transition: all 500ms ease;
       
       h3{
-        font-size: 1.5rem;
+       
         font-weight: bold;
         margin-bottom: .5rem;
       }
