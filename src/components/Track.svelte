@@ -31,7 +31,7 @@
 >
 	{#each programs as program}
 		<SwiperSlide>
-			<div class="card who bg-cover bg-no-repeat h-72 bg-center" style="background-image: url('/img/{program.image}');">
+			<div class="card who bg-cover bg-no-repeat h-72 bg-center" style="background-image: url('/sdg_summit_test/img/{program.image}');">
 			<!-- <div class="content" >{program.title}</div> -->
 			 
 			<div class="content text-white">
